@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    background: #e32672;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color: azure;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+navbar a:hover {
+    color: #DBC7B5;
+    text-decoration: underline 1px;
+}
+
+footer {
+    min-height: 80px;
+    background: #87CEEB;
+    text-align: center;
+    color: azure;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#d05146, #fa9483);
+}
+
+h1,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h3 {
+    margin-top: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h4 {
+    margin-top: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h5 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h2 {
+    font-size: 350%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+h4 {
+    font-size: 200%;
+}
+
+h5 {
+    font-size: 300%;
+}
+
+section {
+    padding: 90px 15%;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+
+#index {
+    background: url('../images/2.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.index-info {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.index-info h1 {
+    font-size: 600%;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.link-index {
+    color: rgba(0, 0, 0, 0.805);
+    text-decoration: underline #00000000 3px;
+    font-size: 22px;
+}
+
+.link-index2 {
+    color: rgba(0, 0, 0, 0.805);
+    text-decoration: underline #00000000 3px;
+    font-size: 10px;
+}
+
+.link-index:hover {
+    color: rgba(208, 237, 155, 0.805);
+}
+
+.centered {
+    text-align: center;
+}
+
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.loc {
+    overflow: auto;
+    border-bottom: 3px #d05146 dashed;
+    margin-bottom: 15px;
+}
+
+.loc img {
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.harta {
+    width: 170%;
+    height: 40vh;
+    border: 3px solid #f3deca;
+    border-radius: 5px;
+}
+
+.row {
+    overflow: auto;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.contacte,
+.cform {
+    border: #f3deca;
+    border-radius: 5px;
+    background-color: #f3deca62;
+    padding: 5px 5%;
+    height: 325px;
+    margin-bottom: 15px;
+}
+
+.imagini,
+.cform {
+    border: #f3deca;
+    border-radius: 5px;
+    background-color: #ee74c957;
+    padding: 5px 5%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.cform input,
+.cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+#hamburger {
+    color: rgba(0, 0, 0, 0.688);
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 90px 10px;
+    }
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    .vframe {
+        height: 55vw;
+    }
+
+    [class^="col-"] {
+        width: 100% !important;
+    }
+
+    navbar a {
+        display: none;
+    }
+
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
